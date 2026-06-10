@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
-<body style="margin:0; text-align:center; background:black;">
+<head>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: black;
+}
 
-<img src="https://i.pinimg.com/1200x/55/28/89/55288990821c1c624fa89279422814fa.jpg" style="max-width:100%; height:auto;">
+img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+</style>
+</head>
+<body>
 
-<audio id="audio" src="Scary Scream Sound Effect.mp3"></audio>
-
-<script>
-setTimeout(() => {
-  document.getElementById("audio").play();
-}, 3000);
-</script>
+<img src="https://i.pinimg.com/1200x/55/28/89/55288990821c1c624fa89279422814fa.jpg">
 
 </body>
 </html>

@@ -3,18 +3,16 @@
 <body style="margin:0; text-align:center; background:black;">
 
 <img src="https://i.pinimg.com/1200x/55/28/89/55288990821c1c624fa89279422814fa.jpg"
-style="max-width:100%; height:auto;">
+style="max-width:100%; height:auto; cursor:pointer;">
 
 <audio id="audio">
-  <source src="Scary Scream Sound Effect.mp3" type="audio/mpeg">
+  <source src="scream.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-window.onload = () => {
-  document.body.addEventListener("click", () => {
-    document.getElementById("audio").play();
-  }, { once: true });
-};
+document.body.addEventListener("click", function () {
+  document.getElementById("audio").play();
+}, { once: true });
 </script>
 
 </body>

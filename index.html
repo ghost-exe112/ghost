@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
-<body style="text-align:center">
+<head>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: black;
+}
 
-<h1>Privește imaginea...</h1>
+img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+</style>
+</head>
+<body>
 
-<img id="img" src="https://i.pinimg.com/1200x/55/28/89/55288990821c1c624fa89279422814fa.jpg" width="600">
-
-<audio id="audio" src="SUNETUL_TAU.mp3"></audio>
-
-<script>
-setTimeout(() => {
-  document.getElementById("img").src = "IMAGINEA_TA.jpg";
-  document.getElementById("audio").play();
-}, 10000);
-</script>
+<img src="https://i.pinimg.com/1200x/55/28/89/55288990821c1c624fa89279422814fa.jpg">
 
 </body>
 </html>
